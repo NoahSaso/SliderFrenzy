@@ -1,0 +1,9 @@
+Package: com.sassoty.sliderfrenzy
+Name: SliderFrenzy
+Depends: preferenceloader
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Replace brightness sliders (and more) with image
+Maintainer: Sassoty <noahsaso@gmail.com>
+Author: Sassoty <noahsaso@gmail.com>
+Section: Tweaks

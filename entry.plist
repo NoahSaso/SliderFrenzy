@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = SliderFrenzy;
+	cell = PSLinkCell;
+	detail = SliderFrenzyListController;
+	icon = SliderFrenzy.png;
+	isController = 1;
+	label = SliderFrenzy;
+    };
+}
