@@ -81,6 +81,7 @@
 			<integer>1</integer>
 			<key>footerText</key>
 			<string>SliderFrenzy © 2014 Noah Saso</string>
+		</dict>
 	</array>
 	<key>title</key>
 	<string>SliderFrenzy</string>
