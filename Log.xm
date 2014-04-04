@@ -1,0 +1,123 @@
+%hook UISlider
+- (void)setContinuous:(BOOL )continuous { %log; %orig; }
+- (BOOL )isContinuous { %log; BOOL  r = %orig; NSLog(@" = %d", r); return r; }
+- (UIImage * )currentMaximumTrackImage { %log; UIImage *  r = %orig; NSLog(@" = %@", r); return r; }
+- (UIImage * )currentMinimumTrackImage { %log; UIImage *  r = %orig; NSLog(@" = %@", r); return r; }
+- (UIImage * )currentThumbImage { %log; UIImage *  r = %orig; NSLog(@" = %@", r); return r; }
+- (void)setMaximumTrackTintColor:(UIColor * )maximumTrackTintColor { %log; %orig; }
+- (UIColor * )maximumTrackTintColor { %log; UIColor *  r = %orig; NSLog(@" = %@", r); return r; }
+- (void)setMaximumValueImage:(UIImage * )maximumValueImage { %log; %orig; }
+- (UIImage * )maximumValueImage { %log; UIImage *  r = %orig; NSLog(@" = %@", r); return r; }
+- (void)setMinimumTrackTintColor:(UIColor * )minimumTrackTintColor { %log; %orig; }
+- (UIColor * )minimumTrackTintColor { %log; UIColor *  r = %orig; NSLog(@" = %@", r); return r; }
+- (void)setMinimumValueImage:(UIImage * )minimumValueImage { %log; %orig; }
+- (UIImage * )minimumValueImage { %log; UIImage *  r = %orig; NSLog(@" = %@", r); return r; }
+- (void)setThumbTintColor:(UIColor * )thumbTintColor { %log; %orig; }
+- (UIColor * )thumbTintColor { %log; UIColor *  r = %orig; NSLog(@" = %@", r); return r; }
+- (BOOL)_alwaysHandleScrollerMouseEvent { %log; BOOL r = %orig; NSLog(@" = %d", r); return r; }
+- (void)_buildTrackArtwork { %log; %orig; }
+- (id)_contentForState:(unsigned int)arg1 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (BOOL)_contentHuggingDefault_isUsuallyFixedHeight { %log; BOOL r = %orig; NSLog(@" = %d", r); return r; }
+- (void)_controlTouchBegan:(id)arg1 withEvent:(id)arg2 { %log; %orig; }
+- (void)_controlTouchEnded:(id)arg1 withEvent:(id)arg2 { %log; %orig; }
+- (void)_controlTouchMoved:(id)arg1 withEvent:(id)arg2 { %log; %orig; }
+- (float)_cornerRadiusForRect:(struct CGRect { struct CGPoint { float x_1_1_1 { %log; float r = %orig; NSLog(@" = %f", r); return r; }
+- (void)_initImages { %log; %orig; }
+- (void)_initSubviews { %log; %orig; }
+- (struct CGSize { float x1; float x2; })_intrinsicSizeWithinSize:(struct CGSize { float x1 { %log; struct CGSize { float x1; float x2; } r = %orig; return r; }
+- (BOOL)_isThumbEnabled { %log; BOOL r = %orig; NSLog(@" = %d", r); return r; }
+- (void)_layoutSubviewsForBoundsChange:(BOOL)arg1 { %log; %orig; }
+- (id)_maxTrackView { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)_maxValueView { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)_maximumTrackImageForState:(unsigned int)arg1 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)_minTrackView { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)_minValueView { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)_minimumTrackImageForState:(unsigned int)arg1 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (void)_populateArchivedSubviews:(id)arg1 { %log; %orig; }
+- (void)_rebuildControlThumb:(BOOL)arg1 track:(BOOL)arg2 { %log; %orig; }
+- (id)_scriptingInfo { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (void)_sendDelayedActions { %log; %orig; }
+- (void)_setContent:(id)arg1 forState:(unsigned int)arg2 { %log; %orig; }
+- (void)_setMaximumTrackImage:(id)arg1 forStates:(unsigned int)arg2 { %log; %orig; }
+- (void)_setMinimumTrackImage:(id)arg1 forStates:(unsigned int)arg2 { %log; %orig; }
+- (void)_setMinimumTrackVisible:(BOOL)arg1 withDuration:(double)arg2 { %log; %orig; }
+- (void)_setThumbEnabled:(BOOL)arg1 { %log; %orig; }
+- (void)_setThumbImage:(id)arg1 forStates:(unsigned int)arg2 { %log; %orig; }
+- (void)_setThumbTintColor:(id)arg1 forStates:(unsigned int)arg2 { %log; %orig; }
+- (void)_setTrackEnabled:(BOOL)arg1 { %log; %orig; }
+- (void)_setUseLookNeue:(BOOL)arg1 { %log; %orig; }
+- (void)_setValue:(float)arg1 andSendAction:(BOOL)arg2 { %log; %orig; }
+- (void)_setValue:(float)arg1 minValue:(float)arg2 maxValue:(float)arg3 andSendAction:(BOOL)arg4 { %log; %orig; }
+- (void)_sliderAnimationDidStop:(id)arg1 finished:(id)arg2 context:(id)arg3 { %log; %orig; }
+- (void)_sliderAnimationWillStart:(id)arg1 context:(id)arg2 { %log; %orig; }
+- (struct UIEdgeInsets { float x1; float x2; float x3; float x4; })_thumbHitEdgeInsets { %log; struct UIEdgeInsets { float x1; float x2; float x3; float x4; } r = %orig; return r; }
+- (id)_thumbImageForState:(unsigned int)arg1 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (BOOL)_trackEnabled { %log; BOOL r = %orig; NSLog(@" = %d", r); return r; }
+- (void)_updateAppearanceForEnabled:(BOOL)arg1 { %log; %orig; }
+- (void)_updateMaxTrackColor { %log; %orig; }
+- (struct UIEdgeInsets { float x1; float x2; float x3; float x4; })alignmentRectInsets { %log; struct UIEdgeInsets { float x1; float x2; float x3; float x4; } r = %orig; return r; }
+- (BOOL)beginTrackingWithTouch:(id)arg1 withEvent:(id)arg2 { %log; BOOL r = %orig; NSLog(@" = %d", r); return r; }
+- (BOOL)cancelMouseTracking { %log; BOOL r = %orig; NSLog(@" = %d", r); return r; }
+- (BOOL)cancelTouchTracking { %log; BOOL r = %orig; NSLog(@" = %d", r); return r; }
+- (BOOL)continueTrackingWithTouch:(id)arg1 withEvent:(id)arg2 { %log; BOOL r = %orig; NSLog(@" = %d", r); return r; }
+- (id)createThumbView { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)createThumbViewNeue { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)currentMaximumTrackImage { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)currentMinimumTrackImage { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)currentThumbImage { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (void)dealloc { %log; %orig; }
+- (id)description { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (void)encodeWithCoder:(id)arg1 { %log; %orig; }
+- (void)endTrackingWithTouch:(id)arg1 withEvent:(id)arg2 { %log; %orig; }
+- (BOOL)gestureRecognizerShouldBegin:(id)arg1 { %log; BOOL r = %orig; NSLog(@" = %d", r); return r; }
+- (id)init { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)initWithCoder:(id)arg1 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)initWithFrame:(struct CGRect { struct CGPoint { float x_1_1_1 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (BOOL)isAccessibilityElementByDefault { %log; BOOL r = %orig; NSLog(@" = %d", r); return r; }
+- (BOOL)isAnimatingValueChange { %log; BOOL r = %orig; NSLog(@" = %d", r); return r; }
+- (BOOL)isContinuous { %log; BOOL r = %orig; NSLog(@" = %d", r); return r; }
+- (BOOL)isElementAccessibilityExposedToInterfaceBuilder { %log; BOOL r = %orig; NSLog(@" = %d", r); return r; }
+- (void)layoutSubviews { %log; %orig; }
+- (id)maximumTrackImageForState:(unsigned int)arg1 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)maximumTrackTintColor { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (float)maximumValue { %log; float r = %orig; NSLog(@" = %f", r); return r; }
+- (id)maximumValueImage { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (struct CGRect { struct CGPoint { float x_1_1_1; float x_1_1_2; } x1; struct CGSize { float x_2_1_1; float x_2_1_2; } x2; })maximumValueImageRectForBounds:(struct CGRect { struct CGPoint { float x_1_1_1 { %log; struct CGRect { struct CGPoint { float x_1_1_1; float x_1_1_2; } x1; struct CGSize { float x_2_1_1; float x_2_1_2; } x2; } r = %orig; return r; }
+- (id)minimumTrackImageForState:(unsigned int)arg1 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)minimumTrackTintColor { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (float)minimumValue { %log; float r = %orig; NSLog(@" = %f", r); return r; }
+- (id)minimumValueImage { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (struct CGRect { struct CGPoint { float x_1_1_1; float x_1_1_2; } x1; struct CGSize { float x_2_1_1; float x_2_1_2; } x2; })minimumValueImageRectForBounds:(struct CGRect { struct CGPoint { float x_1_1_1 { %log; struct CGRect { struct CGPoint { float x_1_1_1; float x_1_1_2; } x1; struct CGSize { float x_2_1_1; float x_2_1_2; } x2; } r = %orig; return r; }
+- (id)scriptingInfoWithChildren { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (void)setAlpha:(float)arg1 { %log; %orig; }
+- (void)setBounds:(struct CGRect { struct CGPoint { float x_1_1_1 { %log; %orig; }
+- (void)setContinuous:(BOOL)arg1 { %log; %orig; }
+- (void)setEnabled:(BOOL)arg1 { %log; %orig; }
+- (void)setFrame:(struct CGRect { struct CGPoint { float x_1_1_1 { %log; %orig; }
+- (void)setHighlighted:(BOOL)arg1 { %log; %orig; }
+- (void)setMaximumTrackImage:(id)arg1 forState:(unsigned int)arg2 { %log; %orig; }
+- (void)setMaximumTrackImage:(id)arg1 forStates:(unsigned int)arg2 { %log; %orig; }
+- (void)setMaximumTrackTintColor:(id)arg1 { %log; %orig; }
+- (void)setMaximumValue:(float)arg1 { %log; %orig; }
+- (void)setMaximumValueImage:(id)arg1 { %log; %orig; }
+- (void)setMinimumTrackImage:(id)arg1 forState:(unsigned int)arg2 { %log; %orig; }
+- (void)setMinimumTrackImage:(id)arg1 forStates:(unsigned int)arg2 { %log; %orig; }
+- (void)setMinimumTrackTintColor:(id)arg1 { %log; %orig; }
+- (void)setMinimumValue:(float)arg1 { %log; %orig; }
+- (void)setMinimumValueImage:(id)arg1 { %log; %orig; }
+- (void)setSelected:(BOOL)arg1 { %log; %orig; }
+- (void)setShowValue:(BOOL)arg1 { %log; %orig; }
+- (void)setThumbImage:(id)arg1 forState:(unsigned int)arg2 { %log; %orig; }
+- (void)setThumbImage:(id)arg1 forStates:(unsigned int)arg2 { %log; %orig; }
+- (void)setThumbTintColor:(id)arg1 { %log; %orig; }
+- (void)setValue:(float)arg1 animated:(BOOL)arg2 { %log; %orig; }
+- (void)setValue:(float)arg1 { %log; %orig; }
+- (struct CGSize { float x1; float x2; })sizeThatFits:(struct CGSize { float x1 { %log; struct CGSize { float x1; float x2; } r = %orig; return r; }
+- (id)thumbImageForState:(unsigned int)arg1 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (struct CGRect { struct CGPoint { float x_1_1_1; float x_1_1_2; } x1; struct CGSize { float x_2_1_1; float x_2_1_2; } x2; })thumbRectForBounds:(struct CGRect { struct CGPoint { float x_1_1_1 { %log; struct CGRect { struct CGPoint { float x_1_1_1; float x_1_1_2; } x1; struct CGSize { float x_2_1_1; float x_2_1_2; } x2; } r = %orig; return r; }
+- (id)thumbTintColor { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (void)tintColorDidChange { %log; %orig; }
+- (struct CGRect { struct CGPoint { float x_1_1_1; float x_1_1_2; } x1; struct CGSize { float x_2_1_1; float x_2_1_2; } x2; })trackRectForBounds:(struct CGRect { struct CGPoint { float x_1_1_1 { %log; struct CGRect { struct CGPoint { float x_1_1_1; float x_1_1_2; } x1; struct CGSize { float x_2_1_1; float x_2_1_2; } x2; } r = %orig; return r; }
+- (float)value { %log; float r = %orig; NSLog(@" = %f", r); return r; }
+- (struct CGRect { struct CGPoint { float x_1_1_1; float x_1_1_2; } x1; struct CGSize { float x_2_1_1; float x_2_1_2; } x2; })valueTextRectForBounds:(struct CGRect { struct CGPoint { float x_1_1_1 { %log; struct CGRect { struct CGPoint { float x_1_1_1; float x_1_1_2; } x1; struct CGSize { float x_2_1_1; float x_2_1_2; } x2; } r = %orig; return r; }
+%end
